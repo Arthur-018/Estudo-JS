@@ -12,3 +12,7 @@ console.log(`Pode viajar sozinha? ${podeViajarSozinha}`)
 const precisaDeAcompanhante = !maiorDeIdade
 
 console.log(`Precisa de acompanhante? ${precisaDeAcompanhante}`)
+
+//AND &&
+//OR ||
+//NOT !
