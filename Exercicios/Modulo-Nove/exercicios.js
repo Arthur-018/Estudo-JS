@@ -72,6 +72,8 @@ if(media >= 7){
 }
 
 
+
+
 //Exercício 6
 
 let nomesUsuario = ['Arthur', 'Gabriel', 'Danilo', 'Moisés'];
@@ -80,4 +82,54 @@ nomesUsuario.forEach((nomes)=>{
     console.log('Olá ', nomes)
 })
 
+
+
+
 //Exercício 7
+
+let preco = [7.9, 3.86, 2.6, 8,2]
+
+let comDesconto = preco.map(function(preco){
+    return preco * 0.9;
+})
+console.log('Preço com 10% de desconto: ', comDesconto)
+
+
+
+
+//Exercício 8
+let idades = [18, 20, 12, 16, 29, 22]
+
+    let maior = idades.filter(function(idade){
+        return idade >= 18;
+    })
+    console.log('Maior de idade: ', maior )
+
+
+
+
+//Exercício 9
+let carrinho = [50, 30, 20]; 
+
+let total = carrinho.reduce(function(acumulador, item) { 
+
+return acumulador + item; 
+
+}, 0); 
+
+let comCupom = total * 0.8; 
+
+console.log("Total com desconto de 20%: R$" + comCupom.toFixed(2)); 
+
+
+//Exercício 10
+
+let tarefas = ["[ ] Estudar", "[x] Lavar a louça", "[ ] Ir ao mercado", "[x] Caminhar", "[ ] Dormir"]; 
+
+let pendentes = tarefas.filter(function(tarefa) { 
+
+return tarefa.startsWith("[ ]"); 
+
+}); 
+
+console.log("Tarefas pendentes:", pendentes); 
