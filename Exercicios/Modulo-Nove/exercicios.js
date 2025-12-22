@@ -42,4 +42,31 @@ console.log('Tamanho da lista de cidades: ', cidades.length)
 
 //Exercício 4
 
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+
+let soma = 0; 
+
+for (let i = 0; i < numeros.length; i++) { 
+
+soma += numeros[i]; 
+
+} 
+
+console.log("Soma total: " + soma); 
+
+//Exercício 5
+
+let notas = [7, 10, 5, 3];
+
+let somaNotas = 0;
+
+for(let nota of notas){
+    somaNotas += nota
+}
+let media = somaNotas / notas.length;
+
+if(media >= 7){
+    console.log('Aprovado')
+} else {
+    console.log('Reprovado!')
+}
