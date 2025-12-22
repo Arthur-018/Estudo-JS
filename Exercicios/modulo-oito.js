@@ -92,13 +92,27 @@ console.log(`Resultado ${calcularSomaDois}`)
 
 //Exercício 9
 
-function executarAcao(acao){
+function executarAcao(num1, num2, acao){
+    return acao(num1,num2)
 }
 
-function executandoAcao(acao){
-    console.log(`Executando ação...`)
+function executandoAcao(num1, num2){
+    return num1 + num2;
 }
 
-const executar = executarAcao(executandoAcao)
+const executar = executarAcao(3, 4, executandoAcao)
+console.log(`Resultado da ação ${executar}`)
 
 
+//Exercício 10
+
+function fazerPergunta(pergunta, respostaCorreta){
+    console.log(pergunta)
+    if(respostaCorreta == "sim"){
+        console.log(`Resposta correta!`)
+    } else {
+        console.log(`Resposta errada!`)
+    }
+}
+
+fazerPergunta("O ano é 2025?" , "sim")
