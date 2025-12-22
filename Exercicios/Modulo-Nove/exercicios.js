@@ -70,3 +70,14 @@ if(media >= 7){
 } else {
     console.log('Reprovado!')
 }
+
+
+//Exercício 6
+
+let nomesUsuario = ['Arthur', 'Gabriel', 'Danilo', 'Moisés'];
+
+nomesUsuario.forEach((nomes)=>{
+    console.log('Olá ', nomes)
+})
+
+//Exercício 7
