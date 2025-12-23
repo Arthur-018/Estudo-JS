@@ -11,7 +11,7 @@ for(const chave in pessoa){
 
 }
 
-console.log('====================================')
+console.log('=====================================')
 
 const chaves = Object.keys(pessoa)
 const valores = Object.values(pessoa)
