@@ -11,7 +11,6 @@ console.log('Sobrenome: ', pessoa.sobrenome)
 
 const livro = {
     titulo: 'It a coisa',
-    autor: 'Stephen King',
     paginas: 1700
 }
 
@@ -20,10 +19,29 @@ livro.idioma = [
     'Ingles', 'Português' , 'Espanhol'
 ]
     
+livro.idioma.push('Mandarim')
+livro.idioma.push('Francês')
 
-console.log('Título: ', livro.titulo)
-console.log('Autor: ', livro.autor)
-console.log('Páginas: ', livro.paginas)
+console.log('Livro antes: ', livro)
 
-console.log('Livro foi publicado? ', livro.publicado)
-console.log('Idiomas do livro: ', livro.idioma)
+delete livro.paginas
+
+console.log('Livro depois: ', livro)
+
+console.log('Autor do livro: ', livro['autor'])
+
+const autor = {
+    nome: 'Stephen King',
+    nacionalidade: 'Canadense',
+    idade: 57,
+    livros: [livro]
+}
+
+console.log('Autor: ', autor)
+
+livro.autor = autor
+
+console.log(livro)
+
+livro.autor.nome
+livro.autor.nacionalidade
