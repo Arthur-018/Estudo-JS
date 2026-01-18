@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📘 Estudo-JS
 
 Este repositório é dedicado **exclusivamente ao meu estudo de JavaScript**.  
