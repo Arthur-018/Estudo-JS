@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const num1 = 2;
 const num2 = 4;
 const operacao = 'soma'
@@ -27,4 +28,35 @@ else if(salario < 7000 && salario >= 4000){
 }
 else{
       console.log('9% de bônus');
+=======
+const num1 = 2;
+const num2 = 4;
+const operacao = 'soma'
+
+if (operacao === 'soma'){
+    console.log(num1 + num2);
+} else if (operacao === 'multiplicação'){
+    console.log(num1 * num2);
+} else if (operacao === 'divisão'){
+    console.log(num1 / num2)
+} else {
+    console.log('Operação não identificada');
+}
+
+
+
+
+const salario = 2000;
+
+if(salario >= 11000){
+    console.log('3% de bônus');
+} else if(salario < 11000 && salario >= 7000){
+        console.log('5% de bônus');
+}
+else if(salario < 7000 && salario >= 4000){
+        console.log('7% de bônus');
+}
+else{
+      console.log('9% de bônus');
+>>>>>>> 87897b812eda25194bac0b11796e64a7249cac9c
 }
