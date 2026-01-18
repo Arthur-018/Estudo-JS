@@ -60,3 +60,4 @@ Estudo-JS/
 
 Este repositório **não é um projeto final**, mas sim um espaço de aprendizado contínuo.  
 Os códigos podem conter versões simples ou repetidas, pois fazem parte do processo de estudo.
+
