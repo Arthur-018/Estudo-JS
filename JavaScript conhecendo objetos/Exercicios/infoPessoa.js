@@ -20,10 +20,7 @@ function mostrarInfoPessoa(pessoa) {
     console.log(`Rua: ${pessoa.endereco.rua}`);
     console.log(`Rua: ${pessoa.endereco.cidade}`);
     console.log(`Rua: ${pessoa.endereco.estado}`);
-
-
 }
-
 
 
 console.log(mostrarInfoPessoa(pessoa));
