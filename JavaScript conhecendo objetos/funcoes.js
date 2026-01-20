@@ -4,12 +4,12 @@ const estudante = {
   cpf: '12312312312',
   turma: 'JavaScript',
   bolsista: true,
-  telefones: ['55111998988998', '5511999283298'],
+  telefones: ['551199999998', '551199999993'],
   media: 7.5,
   estaAprovado: function(mediaBase) {
     return this.media >= mediaBase ? true : false
   }
 }
 
+console.log('oi');
 console.log(estudante.estaAprovado(7));
-

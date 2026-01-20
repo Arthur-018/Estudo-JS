@@ -4,25 +4,23 @@ const estudante = {
   cpf: '12312312312',
   turma: 'JavaScript',
   bolsista: true,
-  telefones: ['55111998988998', '5511999283298'],
+  telefones: ['551199999998', '551199999993'],
   endereco: [{
     rua: 'Rua Joseph Climber',
     numero: '45',
-    complemento: 'apto 43',
-}]
+    complemento: 'apto 43'
+  }]
 }
 
-
 estudante.endereco.push({
-    rua: 'Rua Dona Clotilde',
-    numero: '71',
-    complemento: '',
+  rua: 'Rua Dona Clotilde',
+  numero: '71',
+  complemento: null
 })
 
-//console.log(estudante.endereco);
-//console.log(estudante.endereco[1]);
+// console.log(estudante.endereco);
+// console.log(estudante.endereco[1]);
 
 const listaEnderecosComComplemento = estudante.endereco.filter((endereco) => endereco.complemento)
 
 console.log(listaEnderecosComComplemento);
-

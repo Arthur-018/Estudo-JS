@@ -4,13 +4,13 @@ const estudante = {
   cpf: '12312312312',
   turma: 'JavaScript',
   bolsista: true,
-  telefones: ['55111998988998', '5511999283298'],
+  telefones: ['551199999998', '551199999993'],
 }
 
 estudante.endereco = {
-    rua: 'Rua Joseph Climber',
-    numero: '45',
-    complemento: 'apto 43',
+  rua: 'Rua Joseph Climber',
+  numero: '45',
+  complemento: 'apto 43'
 }
 
 console.log(estudante.endereco.rua);
