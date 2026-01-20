@@ -4,8 +4,17 @@ const user = {
     nascimento: '2024-01-01',
     role: 'estudante',
     ativo: true,
-    exibirIfos: function(){
+    exibirInfos: function(){
         console.log(this.nome, this.email);
-        
     }
 }
+//user.exibirIfos()
+//const exibir = user.exibirIfos;
+//exibir()
+
+const exibir = function(){
+    console.log(this.nome, this.email);
+}
+
+const exibirNome = exibir.bind(user);
+exibirNome()
