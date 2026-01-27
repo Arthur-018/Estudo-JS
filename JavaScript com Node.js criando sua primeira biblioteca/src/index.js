@@ -1,28 +1,28 @@
-const fs = require('fs');
+export function contaPalavras(texto) {
+  const paragrafos = extraiParagrafos(texto)
+  const contagem = paragrafos.flatMap((paragrafo) => {
+    if (!paragrafo) return [];
+    return verificaPalavrasDuplicadas(paragrafo);
+  })
+  return contagem;
+}
 
-const caminhoArquivo = process.argv;
-const link = caminhoArquivo[2]; 
+function extraiParagrafos(texto) {
+  return texto.toLowerCase().split('\n');
+}
 
-fs.readFile(link, 'utf-8', (erro, texto) => {
-  verificaPalavraDuplicadas(texto);
-})
+function limpaPalavras(palavra) {
+  return palavra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+}
 
-//Criar um array com as palavras
-//contar as ocorrências
-//montar um objeto com o resultado
-
-//{
-//  "web": 5,
-//  "computador": 4
-//}
-
-function verificaPalavraDuplicadas(texto){
-    const listaPalvaras = texto.split(' ');
-    const resultado = {};
-    //objeto[propriedade] = valor;
-    listaPalvaras.forEach(palavra => {
-        resultado[palavra] = (resultado[palavra] || 0) + 1
-    })
-    console.log(resultado);
-    
+function verificaPalavrasDuplicadas(texto) {
+  const listaPalavras = texto.split(' ');
+  const resultado = {};
+  listaPalavras.forEach(palavra => {
+    if (palavra.length >= 3) {
+      const palavraLimpa = limpaPalavras(palavra);
+      resultado[palavraLimpa] = (resultado[palavraLimpa] || 0) + 1
+    }
+  })
+  return resultado;
 }
